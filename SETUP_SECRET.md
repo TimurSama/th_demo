@@ -21,7 +21,7 @@
 1. Нажмите **New repository secret**
 2. Заполните форму:
    - **Name**: `TELEGRAM_BOT_TOKEN`
-   - **Secret**: `8591869020:AAEUFxvA4uo5Ct1j62gtE39wI-gdkZfFRmw`
+   - **Secret**: `8591869020:AAFnlsirUwd3TKMibAWDE209OBwVU40ZEjo`
 3. Нажмите **Add secret**
 
 ### Шаг 3: Проверка

@@ -26,7 +26,7 @@ pip install -r requirements.txt
 python scripts/setup_env.py
 ```
 
-Токен бота: `8591869020:AAEUFxvA4uo5Ct1j62gtE39wI-gdkZfFRmw`
+Токен бота: `8591869020:AAFnlsirUwd3TKMibAWDE209OBwVU40ZEjo`
 
 ### Шаг 3: Инициализация базы данных
 
@@ -129,7 +129,7 @@ worker: python main.py
 3. Деплой:
 ```bash
 heroku create your-app-name
-heroku config:set TELEGRAM_BOT_TOKEN=8591869020:AAEUFxvA4uo5Ct1j62gtE39wI-gdkZfFRmw
+heroku config:set TELEGRAM_BOT_TOKEN=8591869020:AAFnlsirUwd3TKMibAWDE209OBwVU40ZEjo
 git push heroku main
 ```
 
@@ -206,7 +206,7 @@ TELEGRAM_WEBAPP_URL=https://your-domain.com
 2. Settings → Secrets and variables → Actions
 3. Добавьте секрет:
    - Name: `TELEGRAM_BOT_TOKEN`
-   - Value: `8591869020:AAEUFxvA4uo5Ct1j62gtE39wI-gdkZfFRmw`
+   - Value: `8591869020:AAFnlsirUwd3TKMibAWDE209OBwVU40ZEjo`
 
 GitHub Actions автоматически будет собирать данные рынка каждый час.
 

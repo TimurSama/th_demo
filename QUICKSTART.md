@@ -46,7 +46,7 @@ python main.py
 
 1. Перейдите в https://github.com/TimurSama/th_demo
 2. Settings → Secrets and variables → Actions
-3. Добавьте секрет `TELEGRAM_BOT_TOKEN` со значением: `8591869020:AAEUFxvA4uo5Ct1j62gtE39wI-gdkZfFRmw`
+3. Добавьте секрет `TELEGRAM_BOT_TOKEN` со значением: `8591869020:AAFnlsirUwd3TKMibAWDE209OBwVU40ZEjo`
 
 Подробнее: см. [GITHUB_SETUP.md](GITHUB_SETUP.md)
 

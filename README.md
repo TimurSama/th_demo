@@ -51,7 +51,7 @@ python scripts/setup_env.py
 
 Или создайте вручную файл `.env` с содержимым:
 ```
-TELEGRAM_BOT_TOKEN=8591869020:AAEUFxvA4uo5Ct1j62gtE39wI-gdkZfFRmw
+TELEGRAM_BOT_TOKEN=8591869020:AAFnlsirUwd3TKMibAWDE209OBwVU40ZEjo
 TELEGRAM_WEBAPP_URL=https://your-domain.com/webapp
 ```
 
