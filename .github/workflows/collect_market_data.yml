@@ -8,9 +8,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'scripts/collect_market_data.py'
-      - '.github/workflows/collect_market_data.yml'
 
 jobs:
   collect:
@@ -36,6 +33,10 @@ jobs:
           DATABASE_PATH: ./data/tokenhunter.db
           EXCHANGES: binance,okx,bybit,gateio
         run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ]; then
+            echo "Error: TELEGRAM_BOT_TOKEN secret is not set"
+            exit 1
+          fi
           python scripts/collect_market_data.py
       
       - name: Commit and push data
@@ -45,9 +46,12 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git config --local core.autocrlf false
+          mkdir -p data
           git add data/ || true
           if ! git diff --staged --quiet; then
-            git commit -m "Update market data [skip ci]"
-            git push
+            git commit -m "Update market data [skip ci]" || exit 0
+            git push || echo "Push failed, but continuing..."
+          else
+            echo "No changes to commit"
           fi
 
